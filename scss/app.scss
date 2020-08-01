@@ -1,1 +1,56 @@
 @charset 'utf-8';
+
+html {
+  font-size: 100%;
+}
+
+.em {
+  .box {
+    display: block;
+    color: white;
+    background-color: blue;
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
+.rem {
+  font-size: 150%;
+  .box {
+    display: block;
+    color: white;
+    background-color: blue;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.vw {
+  .box {
+    display: block;
+    color: white;
+    background-color: blue;
+    width: 10vw;
+    height: 10vw;
+  }
+}
+
+.vh {
+  .box {
+    display: block;
+    color: white;
+    background-color: blue;
+    width: 10vh;
+    height: 10vh;
+  }
+}
+
+.percent {
+  .box {
+    display: block;
+    color: white;
+    background-color: blue;
+    width: 10%;
+    height: 10%;
+  }
+}

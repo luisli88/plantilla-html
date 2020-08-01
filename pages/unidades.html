@@ -1,0 +1,57 @@
+<h1>Unidades</h1>
+<p>Las unidades de medida que usamos en CSS/HTML.</p>
+
+<h2>Comportamiento en resoluciones muy grandes</h2>
+<p>Emular otras dimensiones: 3820 x 1920 (2px) -> 1280 x 800</p>
+<p>Densidad de pixeles: -> cuántos píxeles tengo en una pulgada.</p>
+<ul>
+  <li>Impresión: 72ppi (dpi)</li>
+  <li>Monitor normal: 72ppi (dpi)</li>
+</ul>
+
+<h2>Específicas</h2>
+<p>Son valores concretos a nivel de unidades.</p>
+
+<ul>
+  <li>Pixeles: <i>px</i> -> <i>10px</i></li>
+</ul>
+
+<h2>Relativas</h2>
+<p>Son valores relativos a las dimensiones del contenedor superior.</p>
+
+<ul>
+  <li class="em">
+    em: relativas a la fuente configurada en el explorador. (estándar - 20px)
+    1em -> (16px - 20px), 1.5em -> (24px - 30px)
+
+    <div class="box">1em</div>
+  </li>
+  <li class="rem">
+    rem: relativas a la fuente configurada en el estilo html. (estándar - 20px)
+    1em -> (16px - 20px), 1.5em -> (24px - 30px)
+
+    <div class="box">1rem</div>
+  </li>
+  <li class="vw">
+    vw: 1vw equivale al 1% del ancho actual de la ventana. Si la ventana tiene
+    un ancho de 100px 1vw equivale a 1px. Si la ventana tiene 200px, 1vw
+    equivale a 2px.
+
+    <div class="box">10vw</div>
+  </li>
+  <li class="vh">
+    vh: 1vh equivale al 1% del alto actual de la ventana. Si la ventana tiene un
+    alto de 100px 1vh equivale a 1px. Si la ventana tiene 200px, 1vh equivale a
+    2px.
+
+    <div class="box">10vh</div>
+  </li>
+  <li class="percent">
+    %: Calcula la dimensión según su referencia del contenedor superior.
+    <div class="box">10%</div>
+  </li>
+</ul>
+
+<div>
+  <a href="" onclick="navigateTo('home')">Atrás</a>
+</div>
