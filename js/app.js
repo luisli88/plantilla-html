@@ -4,11 +4,13 @@
 // ---------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------
 
+var startPage = 'home'
+
 function loadPage(page) {
   $.ajax({
     url: '/pages/' + page + '.html',
     dataType: 'html',
-  }).done((data) => {
+  }).done(data => {
     const container = $('#main-content')
     container.removeClass()
     container.addClass(page)
@@ -36,7 +38,7 @@ function getParam(name) {
     return decodeURIComponent(name[1])
 }
 
-window.addEventListener('popstate', (e) => {
+window.addEventListener('popstate', e => {
   const page = getParam('page') || startPage
   loadPage(page)
 })
